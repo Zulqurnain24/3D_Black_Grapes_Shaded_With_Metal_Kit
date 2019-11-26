@@ -10,10 +10,10 @@ import Foundation
 import simd
 
 struct Uniforms {
-    let lightPosition:float4
-    let color:float4
-    let reflectivity:float3
-    let lightIntensity:float3
+    let lightPosition:SIMD4<Float>
+    let color:SIMD4<Float>
+    let reflectivity:SIMD3<Float>
+    let lightIntensity:SIMD3<Float>
     let projectionMatrix:Matrix4x4
     let modelViewMatrix:Matrix4x4
 }
