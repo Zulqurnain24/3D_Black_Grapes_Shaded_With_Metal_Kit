@@ -95,7 +95,7 @@ class GameViewController:UIViewController, MTKViewDelegate {
         }
         
         // Vector Uniforms
-        let teapotColor = SIMD4<Float>(1.0, 1.0, 2.0, 1.0)
+        let grapesColor = SIMD4<Float>(1.0, 1.0, 2.0, 1.0)//dark purple color
         let lightPosition =  SIMD4<Float>(1.0, 1.0, 2.0, 1.0)
         let reflectivity =   SIMD3<Float>(1.0, 1.0, 2.0)
         let intensity = SIMD3<Float>(1.0, 1.0, 2.0)
@@ -107,7 +107,7 @@ class GameViewController:UIViewController, MTKViewDelegate {
         
         let projectionMatrix = Matrix4x4.perspectiveProjection(aspect, fieldOfViewY: 60, near: 0.1, far: 100.0)
         
-        let uniform = Uniforms(lightPosition: lightPosition, color: teapotColor, reflectivity: reflectivity, lightIntensity: intensity, projectionMatrix: projectionMatrix, modelViewMatrix: modelViewMatrix)
+        let uniform = Uniforms(lightPosition: lightPosition, color: grapesColor, reflectivity: reflectivity, lightIntensity: intensity, projectionMatrix: projectionMatrix, modelViewMatrix: modelViewMatrix)
         let uniforms = [uniform]
         uniformBuffer = device.makeBuffer(length: MemoryLayout<Uniforms>.size, options: [])
         memcpy(uniformBuffer.contents(), uniforms, MemoryLayout<Uniforms>.size)
