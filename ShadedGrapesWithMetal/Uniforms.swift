@@ -1,6 +1,6 @@
 //
 //  Uniforms.swift
-//  TeapotLighting
+//  ShadedGrapesWithMetal
 //
 //  Created by Mohammad Zulqarnain on 26/10/2019.
 //  Copyright © 2019 Mohammad Zulqarnain. All rights reserved.
